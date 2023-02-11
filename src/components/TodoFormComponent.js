@@ -1,35 +1,33 @@
 import { Button, TextField, Typography } from '@mui/material'
-import useForm from './read'
-// import React, { useState } from 'react'
+import React, { useState } from 'react'
 
-
-const TodoFormComponent = () => {
-    var [ToDo,setToDo] = useForm({title:"",Quantity:"",Description: "" })
+const TodoComponent = () => {
+    var [name,setName] = useState("")
+   
+    var [List,setList] = useState([])
+    const PushValue = () =>{
+     setList(current => [...current, name])
+     setName("")
+    }
   return (
-    <div>
-       <br></br>
+    <div className='Background'>
+        <Typography variant='h3' className='Head'>To Do Application</Typography>
+        <br></br>
       <br></br>
-        <Typography variant='h3'>ToDo Application</Typography>
-         <br></br>
-      <br></br>
-      <TextField name='title' value={ToDo.title} onChange={setToDo} variant='outlined' label='Title'></TextField>
+      <TextField variant='outlined'  label='Enter Todo' value={name} onChange={(e)=>setName(e.target.value)} ></TextField>
       <br></br>
       <br></br>
-      <TextField name='Quantity' value={ToDo.Quantity} onChange={setToDo} variant='outlined' label='Quantity'></TextField>
-      <br></br>
-      <br></br>
-      <TextField name='Description' value={ToDo.Description} onChange={setToDo} variant='outlined' label='Description'></TextField>
-      <br></br>
-      <br></br>
-      <Button variant='contained' color='error'>Submit</Button>
-      <br></br>
-      <br></br>
-      <Typography variant='h5'>{ToDo.title}</Typography>
-      <Typography variant='h5'>{ToDo.Quantity}</Typography>
-      <Typography variant='h5'>{ToDo.Description}</Typography>
-
+      <Button variant='contained' color='primary' onClick={PushValue}>Add ToDo</Button>
+      {List.map((element, index) =>{
+        return(
+            <div key={index}>
+               <Typography><li>{element}</li></Typography>
+            </div>
+        )
+      })}
+      
     </div>
   )
 }
 
-export default TodoFormComponent
+export default TodoComponent
