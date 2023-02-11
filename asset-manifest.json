@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ToDoApp/static/css/main.f642a614.css",
-    "main.js": "/ToDoApp/static/js/main.e38644bd.js",
-    "static/js/787.439367e2.chunk.js": "/ToDoApp/static/js/787.439367e2.chunk.js",
-    "index.html": "/ToDoApp/index.html",
-    "main.f642a614.css.map": "/ToDoApp/static/css/main.f642a614.css.map",
-    "main.e38644bd.js.map": "/ToDoApp/static/js/main.e38644bd.js.map",
-    "787.439367e2.chunk.js.map": "/ToDoApp/static/js/787.439367e2.chunk.js.map"
+    "main.css": "/ToDoForm/static/css/main.559fe525.css",
+    "main.js": "/ToDoForm/static/js/main.d66cebaf.js",
+    "static/js/787.439367e2.chunk.js": "/ToDoForm/static/js/787.439367e2.chunk.js",
+    "index.html": "/ToDoForm/index.html",
+    "main.559fe525.css.map": "/ToDoForm/static/css/main.559fe525.css.map",
+    "main.d66cebaf.js.map": "/ToDoForm/static/js/main.d66cebaf.js.map",
+    "787.439367e2.chunk.js.map": "/ToDoForm/static/js/787.439367e2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f642a614.css",
-    "static/js/main.e38644bd.js"
+    "static/css/main.559fe525.css",
+    "static/js/main.d66cebaf.js"
   ]
 }
